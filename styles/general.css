@@ -1,0 +1,109 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+
+    font-size: 16px;
+
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(225, 100%, 94%);
+    
+    margin: 0;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+@media (min-width: 375px) {
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
+
+.order-component {
+    background-color: white;
+    display: grid;
+    overflow: hidden;
+    max-width: 375px;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.3);
+}
+.main-img {
+    max-width: 350px;
+}
+.info-section {
+    text-align: center;
+}
+.info-section p,
+.price {
+    color: hsl(224, 23%, 55%);
+}
+h1 {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+.price-plan-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 8px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+.icon {
+    width: 6vh;
+    height: 6vh;
+
+    padding-left: 2rem;
+}
+.attribute-underline {
+    cursor: pointer;
+    padding-right: 2rem;
+    color: hsl(245, 75%, 52%);
+    font-size: 0.75rem;
+    transition-duration: 0.15s;
+}
+.attribute-underline:hover {
+    color: hsl(223, 47%, 23%);
+}
+.button-section {
+    display: grid;
+    justify-content: center;
+}
+.blue-button {
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    transition-duration: 0.15s;
+}
+.blue-button:hover {
+    background-color: hsl(223, 47%, 23%)
+}
+.white-button {
+    color: hsl(224, 23%, 55%);
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transition-duration: 0.15s;
+}
+.white-button:hover {
+    color: black;
+}
+button {
+    cursor: pointer;
+    padding: 0.85rem 4.5rem 0.85rem 4.5rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
