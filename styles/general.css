@@ -15,17 +15,6 @@ body {
     object-fit: cover;
     background-attachment: fixed;
 }
-@media (min-width: 375px) {
-    body {
-        background-image: url(../images/pattern-background-mobile.svg);
-    }
-}
-@media (min-width: 1440px) {
-    body {
-        background-image: url(../images/pattern-background-desktop.svg);
-    }
-}
-
 .order-component {
     background-color: white;
     display: grid;
